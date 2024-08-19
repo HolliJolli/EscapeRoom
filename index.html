@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firewall Escape Room</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="MainScreen">
+        <div id="Heading">
+            <h1><strong>Firewall Control Panel</strong></h1>
+        </div>
+    </div>
+
+    <div class="status-indicator">
+        <div id="status-circle" class="progress"></div>
+        <p id="status-text">Active</p>    
+    </div>
+
+    <div id="riddle-section">
+        <p id="riddle">Riddle will appear here</p>
+        <input type="text" id="answer-input" placeholder="Enter your answer">
+        <button onclick="submitAnswer()">Submit Answer</button>
+        <p id="feedback"></p>
+    </div>
+
+    <p id="final-password"></p>
+
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
