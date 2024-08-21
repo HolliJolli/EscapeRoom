@@ -104,7 +104,6 @@ function deactivateFirewall() {
 
         statusText.style.textShadow = "0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #ff0000, 0 0 30px #ff0000";
         statusText.innerHTML = "Deactivated";
-
         console.log('Firewall Deactivated');
     } else {
         console.error("Element not found");
@@ -127,11 +126,12 @@ document.getElementById('base64DecodeForm').addEventListener('submit', function(
     event.preventDefault();
     var base64String = document.getElementById('base64InputField').value;
     var decodedString = atob(base64String);
-    if (decodedString == "Holly Is a Stinky Lady") {
+    if (decodedString == "TheRandomAhhPassword") {
         alert('CORRECT! WELL DONE, TELL MR.KLINS THAT THE CODE IS: 137425');
     }
 });
 
+// VGhlUmFuZG9tQWhoUGFzc3dvcmQ=
 // Display the first riddle when the page loads
 window.onload = displayRiddle;
 
