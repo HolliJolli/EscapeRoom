@@ -123,10 +123,6 @@ function updateProgress() {
         console.error("Element not found");
     }
 }
-
-// Display the first riddle when the page loads
-window.onload = displayRiddle;
-
 document.getElementById('base64DecodeForm').addEventListener('submit', function(event) {
     event.preventDefault();
     var base64String = document.getElementById('base64InputField').value;
@@ -135,3 +131,9 @@ document.getElementById('base64DecodeForm').addEventListener('submit', function(
         alert('CORRECT! WELL DONE, TELL MR.KLINS THAT THE CODE IS: 137425');
     }
 });
+
+// Display the first riddle when the page loads
+window.onload = displayRiddle;
+
+
+//Testing
