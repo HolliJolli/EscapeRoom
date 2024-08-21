@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #1c1c1c;
-    color: #fff;
+  background-color: #212121; 
+    color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -37,22 +37,22 @@ body {
     background: linear-gradient(135deg, #04e025, #ff0000);
     transition: 1s;
 }
-
 #status-text {
     position: absolute;
     top: 60px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #ffffff; /* Text color */
+    color: #ffffff; 
     text-shadow: 
-      0 0 5px #ffffff,  /* First shadow */
-      0 0 10px #ffffff, /* Second shadow */
-      0 0 15px #00ff55, /* Third shadow */
-      0 0 20px #00ff22, /* Fourth shadow */
-      0 0 25px #4dff00, /* Fifth shadow */
-      0 0 30px #00ff55; /* Sixth shadow */
-
+        0 0 5px #ffffff,  
+        0 0 10px #ffffff, 
+        0 0 15px #00ff55, 
+        0 0 20px #00ff22, 
+        0 0 25px #4dff00, 
+        0 0 30px #00ff55;
+    z-index: 10; /* Ensure it's on top */
 }
+
 
 #riddle-section {
     margin-top: 40px;
@@ -65,7 +65,7 @@ body {
     margin-bottom: 10px;
     border: 2px solid #444;
     border-radius: 5px;
-    background-color: #333;
+    background-color: #676767;
     color: white;
 }
 
@@ -96,4 +96,55 @@ button:hover {
 #final-password {
     margin-top: 20px;
     font-weight: bold;
+}
+
+#status-circle.deactivated {
+    background-color: #ff0000; /* Red color for deactivated state */
+    transition: background-color 0.5s ease; /* Smooth transition */
+}
+
+#THEHIDDENELEMENT {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: black 2px solid;
+    border-radius: 30px;
+
+    background-image: radial-gradient(black, grey, black);
+}
+
+.hidden{
+    display: none !important;
+}
+
+#base64DecodeFormContainer label,
+#base64DecodeFormContainer textarea,
+#base64DecodeFormContainer button {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#base64DecodeFormContainer textarea {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+#decodeButton {
+    padding: 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#decodeButton:hover {
+    background-color: #00a629;
 }
